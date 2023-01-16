@@ -1,0 +1,61 @@
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  &__item {
+    border: solid 1px $borderPortfolio;
+
+    &:hover,
+    &:hover &--overlay {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+      transform: translateY(0);
+    }
+  }
+}
+.project-list__item--overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 49px 45px 49px 24px;
+  color: #fff;
+  background-color: $animationHover;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-box {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.project-list-item-caption {
+  margin: 10px;
+
+  &__headline {
+    color: $fontColor;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding: 20px 24px 4px 24px;
+  }
+  &__text {
+    color: $nrColor;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    padding: 0px 24px 20px 24px;
+    display: block;
+  }
+}

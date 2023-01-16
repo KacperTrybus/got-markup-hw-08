@@ -1,0 +1,24 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+}
+
+// {
+//   "liveSassCompile.settings.formats": [
+//     {
+//       "format": "compressed",
+//       "extensionName": ".min.css",
+//       "savePath": "/css"
+//     }
+//   ],
+//   "liveSassCompile.settings.includeItems": ["/scss/main.scss"],
+//   "liveSassCompile.settings.generateMap": true,
+//   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+// }

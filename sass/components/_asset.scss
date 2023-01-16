@@ -1,0 +1,32 @@
+.asset-list {
+  display: flex;
+  padding: 0px 15px;
+  margin-bottom: -94px;
+
+  &__paragraph-headline {
+    color: $fontColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__paragraph-text {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+  }
+
+  &__icon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px 25px 100px;
+    background-color: $teamBgColor;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+}

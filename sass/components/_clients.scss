@@ -1,0 +1,26 @@
+.client-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+
+  &__border {
+    border: solid $iconColor 1px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-color: $hoverColor;
+    }
+  }
+  .client-list-icon {
+    fill: $iconColor;
+    padding: 17.71px 32px 14.25px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $hoverColor;
+    }
+  }
+}

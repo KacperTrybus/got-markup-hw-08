@@ -1,0 +1,38 @@
+@use './utils/variables' as *;
+
+@import './components/header';
+@import './components/page';
+@import './components/asset';
+@import './components/services';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/modal';
+@import './components/portfolio-filters';
+@import './components/portfolio-projects';
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-color);
+  max-width: 1600px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  font-size: 0;
+}
+ul {
+  list-style-type: none;
+}
+.section {
+  padding: 94px 0px;
+}
+.container {
+  width: 1200px;
+  margin: 0px auto;
+}
