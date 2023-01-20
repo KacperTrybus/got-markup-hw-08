@@ -1,3 +1,19 @@
+@media screen and (max-width: $mobile) {
+  body {
+    width: 480px;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .logo {
+    margin: 16px 0px 16px 15px;
+  }
+  .header {
+    height: 60px;
+    width: 480px;
+  }
+}
+
 .header {
   display: flex;
   justify-content: center;

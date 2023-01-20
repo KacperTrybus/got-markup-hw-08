@@ -1,3 +1,19 @@
+@media screen and (max-width: 480px) {
+  .service-list {
+    position: absolute;
+    visibility: hidden;
+
+    &__overlay-text {
+      position: absolute;
+      visibility: hidden;
+    }
+    &__overlay-box {
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+}
+
 .service-list {
   display: flex;
   gap: 30px;

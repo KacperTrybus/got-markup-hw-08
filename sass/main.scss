@@ -1,5 +1,4 @@
 @use './utils/variables' as *;
-
 @import './components/header';
 @import './components/page';
 @import './components/asset';
@@ -35,4 +34,14 @@ ul {
 .container {
   width: 1200px;
   margin: 0px auto;
+}
+@media screen and (max-width: $mobile) {
+  body {
+    min-width: 480px;
+  }
+}
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+  body {
+    width: 768px;
+  }
 }
