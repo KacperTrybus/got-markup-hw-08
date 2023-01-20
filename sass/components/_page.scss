@@ -1,4 +1,7 @@
 @media screen and (max-width: $mobile) {
+ .container{
+  width: 480px;
+ }
   .page__image {
     background-image: url(../images/background_mobile.jpg);
     width: 480px;
@@ -13,34 +16,38 @@
       line-height: 1.61;
       margin: 118px 58px 198px 57px;
       color: red;
-      text-align: center;
+      text-align: left;
+      
+      
     }
   }
 }
+@media screen and (min-width: $desktop) {
+  
 
 .page--color {
   background-color: white;
 }
 .page__image {
-  // background-image: url(../images/background.jpg);
+  background-image: url(../images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
-  // &--overlay {
-  //   display: block;
-  //   background: rgba(47, 48, 58, 0.4);
-  // }
+  &--overlay {
+    display: block;
+    background: rgba(47, 48, 58, 0.4);
+  }
 
-  // &-text {
-  //   font-weight: 900;
-  //   font-size: 44px;
-  //   line-height: 1.36;
-  //   letter-spacing: 0.06em;
-  //   text-align: center;
-  //   text-transform: uppercase;
-  //   color: white;
-  //   margin: 106px 252px 30px 252px;
-  // }
+  &-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 106px 252px 30px 252px;
+  }
 }
 .page__btn {
   color: white;
@@ -66,4 +73,5 @@
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
 }

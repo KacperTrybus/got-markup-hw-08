@@ -39,6 +39,11 @@ ul {
   body {
     min-width: 480px;
   }
+  .container{
+    width: 480px;
+  }
+ 
+
 }
 @media screen and (min-width: $mobile) and (max-width: $tablet) {
   body {

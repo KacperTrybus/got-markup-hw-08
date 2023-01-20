@@ -1,17 +1,15 @@
 @media screen and (max-width: $mobile) {
-  body {
-    width: 480px;
-  }
+ 
   .menu {
     visibility: hidden;
   }
   .logo {
-    margin: 16px 0px 16px 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
   }
   .header {
     height: 60px;
-    width: 480px;
-  }
 }
 
 .header {
