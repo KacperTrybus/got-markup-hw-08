@@ -1,29 +1,3 @@
-@media screen and (max-width: $mobile) {
- 
-  .page__image {
-    background-image: url(../images/background_mobile.jpg);
-    width: 480px;
-    height: 400px;
-    &--overlay {
-      display: block;
-      width: 480px;
-      height: 400px;
-    }
-    &-text {
-      font-size: 26px;
-      line-height: 1.61;
-      margin: 118px 58px 198px 57px;
-      color: white;
-      text-align: center;
-      
-      
-      
-    }
-  }
-}
-@media screen and (min-width: $desktop) {
-  
-
 .page--color {
   background-color: white;
 }
@@ -73,4 +47,27 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+@media screen and (max-width: $mobile) {
+ 
+  .page__image {
+    background-image: url(../images/background_mobile.jpg);
+    width: 480px;
+    height: 400px;
+    &--overlay {
+      display: block;
+      width: 480px;
+      height: 400px;
+    }
+    &-text {
+      font-size: 26px;
+      line-height: 1.61;
+      margin: 118px 58px 198px 57px;
+      color: white;
+      text-align: center;
+    }
+      
+      
+    
+  }
 }

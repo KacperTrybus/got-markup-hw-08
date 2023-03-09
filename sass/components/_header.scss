@@ -1,26 +1,10 @@
-@media screen and (max-width: $mobile) {
- 
-  .menu {
-    visibility: hidden;
-  }
-  .logo {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .header {
-    height: 60px;
-}
-}
-
-
 .header {
   display: flex;
-  justify-content: center;
   align-items: center;
   border-bottom: solid 1px;
   border-color: $borderHeader;
   min-width: 100%;
+  
 }
 
 .logo {
@@ -30,6 +14,7 @@
   line-height: 1.17;
   color: #000;
   text-decoration: none;
+ 
 
   &--blue {
     color: $hoverColor;
@@ -100,3 +85,73 @@
     }
   }
 }
+
+
+// MOBILE
+
+
+@media screen and (max-width: $mobile) {
+
+.header{
+  height: 60px;
+}
+  .logo{
+    font-size: 24px;
+  }
+
+  .navigation, .contact{
+   display: none;
+  }
+}
+
+
+// TABLET
+
+@media screen and (min-width: 481px) and  (max-width: $tablet){
+
+  
+  .header{
+    height: 80px;
+    
+  }
+
+  .logo{
+    margin: 26px 83px 26px 0px;
+  }
+  .menu{
+    margin: 32px 101px 32px 0px;
+    gap: 60px;
+  }
+  .contact{
+    margin: 21px 0px 21px 0px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: baseline;
+    
+
+      &__icon {
+          margin-right: 8px;
+          width: 14px;
+          height: 10px;
+        }
+      &__link{
+        font-size: 12px;
+        line-height: 1.17;
+        font-weight: 500;
+      }  
+    
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: $desktop){
+  .logo{
+    font-size: 26px;
+  }
+  .header{
+    justify-content: center;
+  }
+}
+  
+

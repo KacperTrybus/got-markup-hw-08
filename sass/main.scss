@@ -31,22 +31,34 @@ ul {
 .section {
   padding: 94px 0px;
 }
-.container {
-  width: 1200px;
-  margin: 0px auto;
-}
+
 @media screen and (max-width: $mobile) {
   body {
-    min-width: 480px;
+    max-width: 480px;
   }
   .container{
-    width: 480px;
-  }
-
-
-@media screen and (min-width: $mobile) and (max-width: $tablet) {
-  body {
-    width: 768px;
+    // width: 480px;
+    margin: 0px 15px auto;
   }
 }
+
+
+@media screen and (min-width: 481px) and (max-width: $tablet) {
+
+
+body {
+    max-width: 768px;
+  }
+  .container {
+    // width: 768px;
+    margin: 0px 15px auto;
+  }
 }
+
+@media screen and (min-width: $desktop){
+  .container {
+      width: 1200px;
+      margin: 0px auto;
+    }
+}
+
