@@ -1,7 +1,5 @@
 @media screen and (max-width: $mobile) {
- .container{
-  width: 480px;
- }
+ 
   .page__image {
     background-image: url(../images/background_mobile.jpg);
     width: 480px;
@@ -15,8 +13,9 @@
       font-size: 26px;
       line-height: 1.61;
       margin: 118px 58px 198px 57px;
-      color: red;
-      text-align: left;
+      color: white;
+      text-align: center;
+      
       
       
     }
