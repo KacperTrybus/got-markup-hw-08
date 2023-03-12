@@ -32,6 +32,8 @@ ul {
   padding: 94px 0px;
 }
 
+// MOBILE
+
 @media screen and (max-width: $mobile) {
   body {
     max-width: 480px;
@@ -40,8 +42,10 @@ ul {
     // width: 480px;
     margin: 0px 15px auto;
   }
+  
 }
 
+// TABLET
 
 @media screen and (min-width: 481px) and (max-width: $tablet) {
 

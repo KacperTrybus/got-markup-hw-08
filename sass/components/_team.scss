@@ -69,3 +69,10 @@
     fill: white;
   }
 }
+
+@media screen and (max-width: $mobile) {
+
+.team-list {
+    flex-direction: column;
+ }
+}

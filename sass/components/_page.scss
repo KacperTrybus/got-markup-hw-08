@@ -52,22 +52,43 @@
  
   .page__image {
     background-image: url(../images/background_mobile.jpg);
-    width: 480px;
-    height: 400px;
+   max-width: 100%;
+   max-height: 100%;
     &--overlay {
       display: block;
-      width: 480px;
-      height: 400px;
+     max-width: 100%;
+     max-height: 100%;
     }
     &-text {
       font-size: 26px;
       line-height: 1.61;
-      margin: 118px 58px 198px 57px;
-      color: white;
-      text-align: center;
+      margin: 24px 43px 30px 42px;
+  
     }
-      
-      
-    
+  .page__btn {
+  margin: 0px 124px;
+    }
   }
+}
+
+@media screen and (min-width: 481px) and (max-width: $tablet) {
+  .page__image {
+      background-image: url(../images/background_tablet.jpg);
+      max-width: 100%;
+      max-height: 100%;
+  
+      &--overlay {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      &-text {
+      font-size: 26px;
+      line-height: 1.61;
+      margin: 24px 186px 30px 187px;
+      }
+            .page__btn {
+              margin: 0px 268px;
+            }
+   }
 }
