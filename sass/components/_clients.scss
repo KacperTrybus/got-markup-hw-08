@@ -29,7 +29,6 @@
 @media screen and (max-width: $mobile) {
   .client-list{
     flex-wrap: wrap;
-    // flex-grow: 2;
 
       &__border{
         width: 195px;
@@ -40,7 +39,26 @@
     .client-list-icon {
       max-width: 195px;
       max-height: 92px;
-      padding: 16px 52px;
-      
+      padding: 16px 52px; 
     }
+}
+
+@media screen and (min-width: 481px) and (max-width: $tablet){
+
+  .client-list{
+    flex-wrap: wrap;
+  
+    &__border{
+      width: 226px;
+      height: 92px;
+
+    }
+  }
+    .client-list-icon {
+      max-width: 226px;
+      max-height: 92px;
+      padding: 16px 60px;
+    }
+    
+
 }

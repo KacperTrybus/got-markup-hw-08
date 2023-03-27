@@ -59,11 +59,29 @@
   &__icon {
     display: flex;
     width: 450px;
-    
     padding: 25px 190px;
-    background-color: $teamBgColor;
-    margin-bottom: 30px;
-    border-radius: 4px;
   }
 }
+}
+
+@media screen and (min-width: 481px) and (max-width: $tablet){
+
+  .asset-list{
+    flex-wrap: wrap;
+  row-gap: 30px;
+  justify-content: center;
+
+    &__paragraph-text{
+      justify-content: center;
+      text-align: left;
+      width: 354px;
+      
+    }
+
+    &__icon{
+      width: 354px;
+      height: 120px;
+      padding: 25px 142px;
+    }
+  }
 }

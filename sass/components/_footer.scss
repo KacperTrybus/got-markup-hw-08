@@ -134,12 +134,10 @@
 
 @media screen and (max-width: $mobile){
   .foot{
-    display: flex;
     flex-direction: column;
     
    
     &--logo {
-        display: flex;
         justify-content: center;
       }
           
@@ -190,5 +188,68 @@
       display: flex;
       justify-content: center;
     }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: $tablet){
+
+.foot {
+    flex-direction: column;
+
+
+    &--logo {
+      justify-content: flex-start;
+      margin: 60px 0px 20px 100px;
+    }
+
+    &__street {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 61px;
+    }
+
+
+    &__links {
+      margin: 0px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .foot__contact {
+    display: flex;
+    justify-content: center;
+
+    
+  }
+
+  .join-us {
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 144px;
+  }
+
+  .newsletter {
+    display: flex;
+    margin: 60px 152px 0px 166px;
+    justify-content: center;
+
+    &-form {
+      flex-direction: column;
+    }
+
+    &-mail__mailbox {
+      min-width: 420px;
+      justify-content: center;
+    }
+
+    &-btn {
+      margin: 20px 0px;
+    }
+        .foot__headline--mobile-pos {
+          display: flex;
+          justify-content: center;
+        }
+  }
 
 }
