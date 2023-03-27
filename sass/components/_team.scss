@@ -12,6 +12,8 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
+
+
 }
 .team-details {
   display: flex;
@@ -74,5 +76,55 @@
 
 .team-list {
     flex-direction: column;
- }
+ 
+    &__photo{
+      
+      &--1{
+      background: url(../images/john1_mobile.jpg);
+      background-size: 450px 460px;
+        width: 450px;
+        height: 460px;
+
+
+      }
+            &--2 {
+              background: url(../images/john2_mobile.jpg);
+              background-size: 450px 460px;
+              width: 450px;
+              height: 460px;
+            }
+                        &--3 {
+               background: url(../images/john3_mobile.jpg);
+               background-size: 450px 460px;
+               width: 450px;
+               height: 460px;
+                        }
+                        &--4 {
+                          background: url(../images/john4_mobile.jpg);
+                          background-size: 450px 460px;
+                          width: 450px;
+                          height: 460px;
+                                                }
+
+    }
+  }
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .team-list__photo--1 {
+    background-image: url(../images/john1_mobile2x.jpg);
+  }
+    .team-list__photo--2 {
+      background-image: url(../images/john2_mobile2x.jpg);
+    }
+        .team-list__photo--3 {
+          background-image: url(../images/john3_mobile2x.jpg);
+        }
+                .team-list__photo--4 {
+                  background-image: url(../images/john4_mobile2x.jpg);
+                }
+}
+
+  
 }

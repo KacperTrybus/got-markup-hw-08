@@ -52,12 +52,13 @@
  
   .page__image {
     background-image: url(../images/background_mobile.jpg);
-   max-width: 100%;
-   max-height: 100%;
+   width: 480px;
+   height: 400px;
+   
     &--overlay {
       display: block;
-     max-width: 100%;
-     max-height: 100%;
+    width: 480px;
+      height: 400px;
     }
     &-text {
       font-size: 26px;
@@ -68,7 +69,21 @@
   .page__btn {
   margin: 0px 124px;
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .page__image {
+            background-image: url(../images/background_mobile2x.jpg);
+          }
+        }
   }
+.page__section-header--hidden
+{
+  visibility: hidden;
+  display: none;
+}
 }
 
 @media screen and (min-width: 481px) and (max-width: $tablet) {
