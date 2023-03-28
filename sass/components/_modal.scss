@@ -177,3 +177,12 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: $mobile){
+
+  .modal{
+    width: 450px;
+    height: 609px;
+  }
+
+}

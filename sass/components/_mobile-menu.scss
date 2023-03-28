@@ -1,0 +1,98 @@
+@media screen and (min-width: 481px) {
+
+    .menu__toggle{
+        visibility: hidden;
+        display: none;
+}
+}
+
+// 
+
+.mobile-menu.is-open{
+    transform: translateX(0);
+   
+    
+}
+
+
+.menu__toggle{
+    margin: 22px 23px 22px 284px;
+    border: none;
+}
+
+.menu__button{
+    fill: black;
+
+    &:active{
+        fill: $hoverColor;
+    }
+}
+
+.mobile-menu{
+    background-color: white;
+    width: 100vh;
+    height: 100vh;
+    position: fixed;
+        left: 50%;
+        top: 40%;
+        transform: translate(-71%, -100%);
+        
+
+    &__site-list{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0px 0px 40px;
+    row-gap: 32px;
+    }
+
+    &__contact{
+        display: flex;
+        margin: 302px 0px 0px 40px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__contact-link{
+        font-size: 40px;
+        line-height: 1.17;
+
+        &--mail{
+            font-size: 20px;
+        }
+    }
+        &__social{
+            display: flex;
+            flex-direction: row;
+            margin: 64px 0px 0px 40px;
+            gap: 20px;
+        }
+
+            &__social-link{
+                color: $hoverColor;
+            
+
+        }
+
+    &__link{
+        color: $fontColor;
+        font-size: 40px;
+        line-height: 1.17;
+        display: flex;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:active{
+            color: $hoverColor;
+        }
+    }
+
+        &--pos{
+            color: blue;
+        }
+
+    &__close-btn{
+        display: flex;
+        margin: 21px 15px 0px 425px;
+    }
+}
+
