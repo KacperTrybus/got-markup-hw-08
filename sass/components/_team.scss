@@ -132,7 +132,11 @@
 @media screen and (min-width: 481px) and (max-width: $tablet){
 
 .team-list {
-    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__item-box{
+      width: calc((100% - 30px)/2);
+    }
     
 
     &__photo {

@@ -183,6 +183,19 @@
   .modal{
     width: 450px;
     height: 609px;
+      position: fixed;
+      left: 28%;
+      top: 30%;
+      transform: translate(-71%, -100%);
   }
+
+  .form__input{
+    width: 370px;
+  }
+
+  .modal__close-bt{
+    left: 400px;
+  }
+
 
 }

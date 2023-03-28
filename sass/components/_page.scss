@@ -106,4 +106,13 @@
               margin: 0px 268px;
             }
    }
+     @media (min-device-pixel-ratio: 2),
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+       .page__image {
+         background-image: url(../images/background_tablet2x.jpg);
+         background-size: cover;
+       }
+     }
 }
