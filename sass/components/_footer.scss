@@ -13,12 +13,14 @@
     display: flex;
     margin: 60px 0px 20px 0px;
   }
+
   &__street {
     color: white;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
+
   &__headline {
     font-weight: 700;
     font-size: 16px;
@@ -57,6 +59,7 @@
     margin-top: 20px;
     gap: 10px;
   }
+
   &__icon-circle {
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
@@ -70,6 +73,7 @@
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+
   &-icon {
     display: flex;
     justify-content: center;
@@ -92,6 +96,7 @@
     align-items: center;
     display: flex;
   }
+
   &-mail__mailbox {
     width: 358px;
     height: 50px;
@@ -106,6 +111,7 @@
       color: $footFontColor;
     }
   }
+
   &-btn {
     background-color: $hoverColor;
     width: 200px;
@@ -123,6 +129,7 @@
       letter-spacing: 0.06em;
       display: inline;
     }
+
     &__icon {
       fill: #fff;
       position: relative;
@@ -132,68 +139,70 @@
   }
 }
 
-@media screen and (max-width: $mobile){
-  .foot{
+@media screen and (max-width: $mobile) {
+  .foot {
     flex-direction: column;
-    
-   
+
+
     &--logo {
-        justify-content: center;
-      }
-          
-      &__street {
-        display: flex;
-        justify-content:center;
-      }
-            
+      justify-content: center;
+    }
 
-  &__links{
-    margin: 0px;
-    flex-direction: column;
-  }
-}
-
-    .foot__contact {
+    &__street {
       display: flex;
       justify-content: center;
-
-      &--mail{
-        justify-content: center;
-      }
     }
-    .join-us{
-     margin: 60px 0px 0px 0px;
+
+
+    &__links {
+      margin: 0px;
+      flex-direction: column;
+    }
+  }
+
+  .foot__contact {
+    display: flex;
+    justify-content: center;
+
+    &--mail {
       justify-content: center;
-      align-items: center;
     }
+  }
 
-   .newsletter{
+  .join-us {
+    margin: 60px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter {
     display: flex;
     margin: 60px 0px 0px 0px;
 
-    &-form{
+    &-form {
       flex-direction: column;
     }
-   
-    &-mail__mailbox{
+
+    &-mail__mailbox {
       min-width: 420px;
       justify-content: flex-start;
     }
 
-    &-btn{
+    &-btn {
       margin: 20px 0px;
     }
   }
-    .foot__headline--mobile-pos{
-      display: flex;
-      justify-content: center;
-    }
+
+  .foot__headline--mobile-pos {
+    display: flex;
+    justify-content: center;
+  }
 
 }
 
-@media screen and (min-width: 481px) and (max-width: $tablet){
+@media screen and (min-width: 481px) and (max-width: $tablet) {
 
-.foot {
+  .foot {
     flex-direction: column;
 
 
@@ -220,7 +229,7 @@
     display: flex;
     justify-content: center;
 
-    
+
   }
 
   .join-us {
@@ -246,10 +255,11 @@
     &-btn {
       margin: 20px 0px;
     }
-        .foot__headline--mobile-pos {
-          display: flex;
-          justify-content: center;
-        }
+
+    .foot__headline--mobile-pos {
+      display: flex;
+      justify-content: center;
+    }
   }
 
 }
