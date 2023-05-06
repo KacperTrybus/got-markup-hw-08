@@ -17,8 +17,8 @@
       border-color: $hoverColor;
     }
   }
-}
-  .client-list-icon {
+
+  &-icon {
     fill: $iconColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     max-width: 195px;
@@ -31,6 +31,7 @@
       fill: $hoverColor;
     }
   }
+}
 
 
 @media screen and (min-width: $desktop) {
@@ -41,9 +42,8 @@
 
 .client-list-icon {
   padding: 17.71px 32px 14.25px;
-}
-    
-  
+ }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: $tablet){
