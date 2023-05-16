@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (min-width: $mobile) {
 
 .team-list {
     flex-direction: column;
@@ -129,7 +129,7 @@
   
 }
 
-@media screen and (min-width: 481px) and (max-width: $tablet){
+@media screen and (min-width: $tablet) and (max-width: 1199px){
 
 .team-list {
     flex-wrap: wrap;
