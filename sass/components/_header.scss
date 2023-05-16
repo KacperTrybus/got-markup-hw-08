@@ -1,32 +1,15 @@
-.header {
-  display: flex;
-  align-items: center;
-  border-bottom: solid 1px;
-  border-color: $borderHeader;
-  min-width: 100%;
-  
-}
+@media screen and (min-width: $desktop) {
 
-.logo {
-  font-weight: 700;
-  font-size: 26px;
-  font-family: 'Raleway';
-  line-height: 1.17;
-  color: #000;
-  text-decoration: none;
- 
-
-  &--blue {
-    color: $hoverColor;
+  .header{
+    justify-content: center;
   }
-}
 
-.menu {
+  .menu {
   justify-content: center;
-  align-items: center;
-  display: flex;
   column-gap: 46px;
   margin: 32px 345px 30px 93px;
+  flex-direction: row;
+  display: flex;
 
   &__item {
     font-weight: 500;
@@ -58,12 +41,14 @@
     }
   }
 }
+
 .contact {
   margin: 32px 12px 32px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+
 
   &__icon {
     margin-right: 10px;
@@ -86,71 +71,81 @@
   }
 }
 
+}
+
 
 // MOBILE
 
-
-@media screen and (max-width: $mobile) {
-
-.header{
-  height: 60px;
+@media screen and (min-width: $mobile) {
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px;
+  border-color: $borderHeader;
+  min-width: 100%;
 }
-  .logo{
-    font-size: 24px;
-  }
 
-  .navigation, .contact{
-   display: none;
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: 'Raleway';
+  line-height: 1.17;
+  color: #000;
+  text-decoration: none;
+  margin: 15px 0px;
+
+
+  &--blue {
+    color: $hoverColor;
   }
+ }
+}
+
+
+@media screen and (min-width: $mobile) and (max-width: 767px) {
+  .navigation,
+    .contact {
+      display: none;
+    }
 }
 
 
 // TABLET
 
-@media screen and (min-width: 486px) and  (max-width: $tablet){
+// @media screen and (min-width: 486px) and (max-width: $tablet) {
 
-  
-  .header{
-    height: 80px;
-  }
 
-  .logo{
-    margin: 26px 83px 26px 0px;
-  }
-  .menu{
-    margin: 32px 101px 32px 0px;
-    gap: 60px;
-  }
-  .contact{
-    margin: 21px 0px 21px 0px;
-    gap: 10px;
-    flex-direction: column;
-    align-items: baseline;
-    
+//   .header {
+//     height: 80px;
+//   }
 
-      &__icon {
-          margin-right: 8px;
-          width: 14px;
-          height: 10px;
-        }
-      &__link{
-        font-size: 12px;
-        line-height: 1.17;
-        font-weight: 500;
-      }  
-    
-  }
-}
+//   .logo {
+//     margin: 26px 83px 26px 0px;
+//   }
 
-// DESKTOP
+//   .menu {
+//     margin: 32px 101px 32px 0px;
+//     gap: 60px;
+//   }
 
-@media screen and (min-width: $desktop){
-  .logo{
-    font-size: 26px;
-  }
-  .header{
-    justify-content: center;
-  }
-}
-  
+//   .contact {
+//     margin: 21px 0px 21px 0px;
+//     gap: 10px;
+//     flex-direction: column;
+//     align-items: baseline;
 
+
+//     &__icon {
+//       margin-right: 8px;
+//       width: 14px;
+//       height: 10px;
+//     }
+
+//     &__link {
+//       font-size: 12px;
+//       line-height: 1.17;
+//       font-weight: 500;
+//     }
+
+//   }
+// }

@@ -1,22 +1,13 @@
-@media screen and (min-width: 481px) {
+@media screen and (min-width: $mobile) and (max-width: 767px) {
 
-    .menu__toggle{
+.mobile-menu {
         visibility: hidden;
         display: none;
-}
+    }
 
-.mobile-menu{
-    visibility: hidden;
-    display: none;
-}
-}
-
-// 
 
 .mobile-menu.is-open{
     transform: translateX(0);
-   
-    
 }
 
 
@@ -100,4 +91,17 @@
         margin: 21px 15px 0px 425px;
     }
 }
+}
 
+@media screen and (min-width: $tablet){
+
+         .menu__toggle {
+    visibility: hidden;
+    display: none;
+}
+
+.mobile-menu {
+    visibility: hidden;
+    display: none;
+}
+}
