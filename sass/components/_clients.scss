@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
+  justify-content: center;
+  align-items: center;
 
   &__border {
     border: solid $iconColor 1px;
