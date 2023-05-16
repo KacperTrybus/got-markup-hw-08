@@ -23,7 +23,7 @@ ul {
 
 // MOBILE
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: 480px) {
   body {
     max-width: 480px;
   }
@@ -36,7 +36,7 @@ ul {
 
 // TABLET
 
-@media screen and (min-width: 481px) and (max-width: $tablet) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
 
 body {
@@ -48,7 +48,7 @@ body {
   }
 }
 
-@media screen and (min-width: $desktop){
+@media screen and (min-width: 1200px){
   .container {
       width: 1200px;
       margin: 0px auto;

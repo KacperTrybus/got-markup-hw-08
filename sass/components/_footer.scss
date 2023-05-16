@@ -1,49 +1,182 @@
-.foot {
-  background-color: $bgColor;
+@media screen and (min-width: $mobile) {
+
+  .foot {
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__links {
+      display: flex;
+      font-style: normal;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    &--logo {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0px 20px 0px;
+    }
+
+    &__street {
+      color: white;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    }
+
+    &__headline {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.17;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 0.03em;
+    }
+
+    &__contact {
+      color: $footFontColor;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $hoverColor;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      &--mail {
+        display: flex;
+        padding: 9px 0px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        justify-content: center;
+      }
+    }
+  }
+
+  .join-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 137px;
+
+    &__list {
+      display: flex;
+      margin-top: 20px;
+      gap: 10px;
+      flex-direction: row;
+    }
+
+    &__icon-circle {
+      background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+
+      &:hover,
+      &:focus {
+        background-color: $hoverColor;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+      fill: #fff;
+      cursor: pointer;
+    }
+  }
+
+.newsletter {
   display: flex;
+  flex-direction: column;
+
+  &-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-mail__mailbox {
+    width: 450px;
+    height: 50px;
+    background-color: $bgColor;
+    border: 1px $newsletterBorder solid;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px 0px 15px 16px;
+    outline: none;
+    margin: 20px 0px;
+
+    &::placeholder {
+      color: $footFontColor;
+    }
+  }
+
+  &-btn {
+    background-color: $hoverColor;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    &__font {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      color: #fff;
+      letter-spacing: 0.06em;
+      display: inline;
+    }
+
+    &__icon {
+      fill: #fff;
+      position: relative;
+      top: 6px;
+      left: 12px;
+    }
+  }
+}
+
+
+
+}
+
+@media screen and (min-width: $desktop){
+.foot {
+  flex-direction: row;
 
   &__links {
     margin: 0px 0px 60px 15px;
-    display: flex;
-    font-style: normal;
+    text-align: left;
+    flex-direction: row;
   }
 
   &--logo {
-    color: white;
-    display: flex;
-    margin: 60px 0px 20px 0px;
+    
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
-  &__street {
-    color: white;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  &__contact {
+
+  &:hover,
+  &:focus {
+    color: $hoverColor;
   }
 
-  &__headline {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 0.03em;
-  }
+  &--mail {
+    padding: 9px 0px;
+    justify-content: flex-start;
 
-  .foot__contact {
-    color: $footFontColor;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: $hoverColor;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &--mail {
-      display: flex;
-      padding: 9px 0px;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
@@ -87,14 +220,12 @@
 // zapis do newslettera
 
 .newsletter {
-  display: flex;
   flex-direction: column;
   margin: 72px 0px 0px 78px;
 
   &-form {
     margin-top: 20px;
     align-items: center;
-    display: flex;
   }
 
   &-mail__mailbox {
@@ -138,128 +269,5 @@
     }
   }
 }
-
-@media screen and (max-width: $mobile) {
-  .foot {
-    flex-direction: column;
-
-
-    &--logo {
-      justify-content: center;
-    }
-
-    &__street {
-      display: flex;
-      justify-content: center;
-    }
-
-
-    &__links {
-      margin: 0px;
-      flex-direction: column;
-    }
-  }
-
-  .foot__contact {
-    display: flex;
-    justify-content: center;
-
-    &--mail {
-      justify-content: center;
-    }
-  }
-
-  .join-us {
-    margin: 60px 0px 0px 0px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .newsletter {
-    display: flex;
-    margin: 60px 0px 0px 0px;
-
-    &-form {
-      flex-direction: column;
-    }
-
-    &-mail__mailbox {
-      min-width: 420px;
-      justify-content: flex-start;
-    }
-
-    &-btn {
-      margin: 20px 0px;
-    }
-  }
-
-  .foot__headline--mobile-pos {
-    display: flex;
-    justify-content: center;
-  }
-
 }
 
-@media screen and (min-width: 481px) and (max-width: $tablet) {
-
-  .foot {
-    flex-direction: column;
-
-
-    &--logo {
-      justify-content: flex-start;
-      margin: 60px 0px 20px 100px;
-    }
-
-    &__street {
-      display: flex;
-      justify-content: flex-start;
-      margin-left: 61px;
-    }
-
-
-    &__links {
-      margin: 0px;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-  }
-
-  .foot__contact {
-    display: flex;
-    justify-content: center;
-
-
-  }
-
-  .join-us {
-    justify-content: center;
-    align-items: center;
-    margin: 0px 0px 0px 144px;
-  }
-
-  .newsletter {
-    display: flex;
-    margin: 60px 152px 0px 166px;
-    justify-content: center;
-
-    &-form {
-      flex-direction: column;
-    }
-
-    &-mail__mailbox {
-      min-width: 420px;
-      justify-content: center;
-    }
-
-    &-btn {
-      margin: 20px 0px;
-    }
-
-    .foot__headline--mobile-pos {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-}

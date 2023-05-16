@@ -33,20 +33,7 @@
   }
 }
 
-
-@media screen and (min-width: $desktop) {
-
-  .client-list__border{
-      width: 170px;
-    }
-
-.client-list-icon {
-  padding: 17.71px 32px 14.25px;
- }
-
-}
-
-@media screen and (min-width: 481px) and (max-width: $tablet){
+@media screen and (min-width: $tablet) and (max-width: 1199px){
 
   .client-list{
     flex-wrap: wrap;
@@ -56,12 +43,22 @@
       height: 92px;
 
     }
-  }
-    .client-list-icon {
+  
+    &-icon {
       max-width: 226px;
       max-height: 92px;
       padding: 16px 60px;
     }
-    
+  }
+}
 
+@media screen and (min-width: $desktop) {
+
+  .client-list__border {
+    width: 170px;
+  }
+
+  .client-list-icon {
+    padding: 17.71px 32px 14.25px;
+  }
 }

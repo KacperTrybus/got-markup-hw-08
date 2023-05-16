@@ -56,7 +56,7 @@
 
 
 
-@media screen and (min-width: 481px) and (max-width: $tablet){
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
 
   .asset-list{
   flex-wrap: wrap;
