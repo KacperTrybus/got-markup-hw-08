@@ -6,14 +6,14 @@
 
     .page__image {
       background-image: url(../images/background_mobile.jpg);
-      width: 480px;
-      height: 400px;
+      width: 100%;
+      height: auto;
 
       &--overlay {
         background: rgba(47, 48, 58, 0.4);
         display: block;
-        width: 480px;
-        height: 400px;
+       width: 100%;
+        height: auto;
       }
 
       &-text {
@@ -67,7 +67,7 @@
 @media screen and (min-width: $desktop) {
 
 .page__image {
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background_desktop.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -78,8 +78,7 @@
   }
 }
 .page__btn {
-  margin-left: 500px;
-  margin-bottom: 106px;
+  margin: 0px 0px 106px 500px;
 }
 
 .page__section-header {
@@ -91,6 +90,15 @@
   letter-spacing: 0.03em;
 
 }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .page__image {
+    background-image: url(../images/background_desktop2x.jpg);
+  }
 }
 
 
