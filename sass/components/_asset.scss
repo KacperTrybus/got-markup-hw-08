@@ -1,3 +1,5 @@
+@media screen and (min-width: $mobile) {
+
 .asset-list {
   display: flex;
   padding: 0px;
@@ -21,7 +23,8 @@
     font-size: 14px;
     line-height: 1.71;
     text-align: left;
-    color: $nrColor
+    color: $nrColor;
+    margin-bottom: 30px;
   }
 
   &__icon {
@@ -34,7 +37,7 @@
     border-radius: 4px;
   }
 }
-
+}
 
 @media screen and (min-width: $desktop){
   .asset-list {
