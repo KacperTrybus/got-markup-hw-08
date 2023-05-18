@@ -178,7 +178,13 @@
           <ul class="team-list">
             <li class="team-list__item-box">
               <figure>
-                <img src=images/john1.jpg alt="Zdjęcie johna doe" width="270" height="260" class="team-list__photo--1">
+                <img src=images/john1.jpg alt="Zdjęcie johna doe"
+                  srcset="
+                  images/john1_mobile.jpg 450w,
+                  images/john1_mobile2x.jpg 900w,
+                  images/john1.jpg 406w"
+                  sizes="(min-width: 1200px) 270px, (min-width: 480px) 450px"
+                  >
                 <figcaption class="team-details">
                   <span class="team-details__name">John doe</span>
                   <span class="team-details__position">Product designer</span>
@@ -222,7 +228,13 @@
 
             <li class="team-list__item-box">
               <figure>
-                <img src="images/john2.jpg" alt="Zdjęcie johna doe" width="270" height="260" class="team-list__photo--2">
+                <img src="images/john2.jpg" alt="Zdjęcie johna doe"
+                
+                srcset="images/john2_mobile.jpg 450w,
+                        images/john2_mobile2x.jpg 900w,
+                        images/john2.jpg 270w"
+                sizes=" (min-width: 1200px) 270px, (min-width: 480px) 450px"
+                >
                 <figcaption class="team-details">
                   <span class="team-details__name">John doe</span>
                   <span class="team-details__position">Frontend Developer</span>
@@ -265,7 +277,10 @@
             </li>
             <li class="team-list__item-box">
               <figure>
-                <img src=images/john3.jpg alt="Zdjęcie johna doe" width="270" height="260" class="team-list__photo--3">
+                <img src=images/john3.jpg alt="Zdjęcie johna doe"
+                srcset="images/john3_mobile.jpg 450w, images/john3_mobile2x.jpg 900w, images/john3.jpg 270w"
+                sizes="(min-width: 1200px) 270px, (min-width: 480px) 450px"
+                >
                 <figcaption class="team-details">
                   <span class="team-details__name">John doe</span>
                   <span class="team-details__position">Marketing</span>
@@ -308,7 +323,9 @@
             </li>
             <li class="team-list__item-box">
               <figure>
-                <img src=images/john4.jpg alt="Zdjęcie johna doe" width="270" height="260" class="team-list__photo--4">
+                <img src=images/john4.jpg alt="Zdjęcie johna doe"
+                srcset="images/john4_mobile.jpg 450w, images/john4_mobile2x.jpg 900w, images/john4.jpg 270w"
+                sizes="(min-width: 1200px) 270px, (min-width: 480px) 450px"              >
                 <figcaption class="team-details">
                   <span class="team-details__name">John doe</span>
                   <span class="team-details__position">UI Designer</span>
