@@ -5,6 +5,7 @@
   display: flex;
   margin-top: 50px;
   gap: 30px;
+  flex-direction: row;
 
   &__item-box {
     background-color: #ffffff;
@@ -72,7 +73,7 @@
   }
 }
 
-@media screen and (min-width: $mobile) {
+@media screen and (min-width: $mobile) and (max-width: 1200px){
 
 .team-list {
     flex-direction: column;
@@ -87,63 +88,6 @@
 //     &__item-box{
 //       width: calc((100% - 30px)/2);
 //     }
-    
-
-//     &__photo {
-
-//       &--1 {
-//         background: url(../images/john1_tablet.jpg);
-//         background-size: 354px 374px;
-//         width: 354px;
-//         height: 374px;
-
-
-//       }
-
-//       &--2 {
-//         background: url(../images/john2_tablet.jpg);
-//         background-size: 354px 374px;
-//         width: 354px;
-//         height: 374px;
-//       }
-
-//       &--3 {
-//         background: url(../images/john3_tablet.jpg);
-//         background-size: 354px 374px;
-//         width: 354px;
-//         height: 374px;
-//       }
-
-//       &--4 {
-//         background: url(../images/john4_tablet.jpg);
-//         background-size: 354px 374px;
-//         width: 354px;
-//         height: 374px;
-//       }
-
-//     }
-//   }
-
-//   @media (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//     .team-list__photo--1 {
-//       background-image: url(../images/john1_tablet2x.jpg);
-//     }
-
-//     .team-list__photo--2 {
-//       background-image: url(../images/john2_tablet2x.jpg);
-//     }
-
-//     .team-list__photo--3 {
-//       background-image: url(../images/john3_tablet2x.jpg);
-//     }
-
-//     .team-list__photo--4 {
-//       background-image: url(../images/john4_tablet2x.jpg);
-//     }
-//   }
 
 // .team-details{
 
