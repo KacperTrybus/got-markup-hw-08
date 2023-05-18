@@ -52,15 +52,20 @@
         }
       }
     
+.page__section-header {
+  color: $fontColor;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    .page__section-header--hidden {
+    &--hidden {
       visibility: hidden;
       display: none;
-    
+    }
   }
 }
-
-
 
 @media screen and (min-width: $desktop) {
 
@@ -78,16 +83,11 @@
 .page__btn {
   margin: 0px 0px 106px 500px;
 }
-
-.page__section-header {
-  color: $fontColor;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-
 }
+
+.page__section-header--hidden{
+  visibility: visible;
+  display: block;
 }
 
 @media (min-device-pixel-ratio: 2),
