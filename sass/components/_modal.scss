@@ -1,9 +1,12 @@
+@media screen and (min-width: $mobile) {
+  
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
   transform: scale(0.1);
 }
+
 .backdrop {
   background: rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -19,8 +22,8 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: white;
   transform: translate(-50%, -50%);
   border-radius: 4px;
@@ -30,7 +33,7 @@
     border: 1px solid $XButton;
     background-color: #fff;
     border-radius: 50%;
-    left: 490px;
+    left: 410px;
     top: 8px;
     width: 30px;
     height: 30px;
@@ -86,7 +89,7 @@
     display: block;
     border: 1px $formBoxColor solid;
     border-radius: 4px;
-    width: 448px;
+    width: 370px;
     height: 40px;
     align-items: center;
     justify-content: center;
@@ -163,8 +166,8 @@
 
     &__icon {
       position: absolute;
-      left: 60px;
-      bottom: 137px;
+      left: 32px;
+      bottom: 166px;
       fill: #fff;
       background-color: $hoverColor;
       border: none;
@@ -177,25 +180,25 @@
     opacity: 1;
   }
 }
+}
 
-@media screen and (max-width: $mobile){
+@media screen and (min-width: $desktop) {
 
-  .modal{
-    width: 450px;
-    height: 609px;
-      position: fixed;
-      left: 28%;
-      top: 30%;
-      transform: translate(-71%, -100%);
+  .modal {
+    width: 528px;
+    height: 581px;
+
+    &__close-bt {
+      left: 490px;
+    }
+  }
+.form .checkbox__icon {
+    left: 61px;
+    bottom: 137px;
   }
 
-  .form__input{
-    width: 370px;
+  .form__input {
+    width: 448px;
   }
-
-  .modal__close-bt{
-    left: 400px;
-  }
-
 
 }
