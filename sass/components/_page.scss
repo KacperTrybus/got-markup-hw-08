@@ -1,11 +1,14 @@
 .page--color {
   background-color: white;
 }
+// background-image: url(../images/background_desktop.jpg);
 
 .page__image {
-  background-image: url(../images/background_mobile.jpg);
   width: 100%;
   height: auto;
+  background-image: url(../images/background_mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &--overlay {
     background: rgba(47, 48, 58, 0.4);
@@ -41,15 +44,6 @@
   padding: 10px 41px 10px 42px;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .page__image {
-    background-image: url(../images/background_mobile2x.jpg);
-  }
-}
-
 .page__section-header {
   color: $fontColor;
   font-weight: 700;
@@ -66,7 +60,6 @@
 
 @media screen and (min-width: $desktop) {
   .page__image {
-    background-image: url(../images/background_desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -84,15 +77,6 @@
 .page__section-header--hidden {
   visibility: visible;
   display: block;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .page__image {
-    background-image: url(../images/background_desktop2x.jpg);
-  }
 }
 
 // @media screen and (min-width: $tablet) {
