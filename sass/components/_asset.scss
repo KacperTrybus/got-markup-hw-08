@@ -2,19 +2,19 @@
   display: flex;
   padding: 0px;
   flex-direction: column;
-  margin: -30px 0px -94px 0px;
+  margin: -30px 0px -50px 0px;
 
   &__paragraph-headline {
-  justify-content: center;
-  text-align: center;
-  color: $fontColor;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    color: $fontColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
   }
 
   &__paragraph-text {
@@ -23,6 +23,7 @@
     text-align: left;
     color: $nrColor;
     margin-bottom: 30px;
+    width: 450px;
   }
 
   &__icon {
@@ -34,44 +35,55 @@
     margin-bottom: 30px;
     border-radius: 4px;
   }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
-
-@media screen and (min-width: $desktop){
+@media screen and (min-width: $desktop) {
   .asset-list {
     padding: 0px 15px;
     margin: 0px 0px -94px 0px;
     flex-direction: row;
 
-    &__paragraph-headline{
+    &__paragraph-headline {
       text-align: left;
+      justify-content: left;
     }
-  
+
+    &__paragraph-text {
+      width: auto;
+    }
+
     &__icon {
       width: 270px;
       height: 120px;
-      padding: 25px 100px 25px 100px; 
+      padding: 25px 100px 25px 100px;
     }
-   }
+
+    &__item {
+      align-items: flex-start;
+    }
   }
-
-
+}
 
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .asset-list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
 
-  .asset-list{
-  flex-wrap: wrap;
-  row-gap: 30px;
-  justify-content: center;
-
-    &__paragraph-text{
+    &__paragraph-text {
       justify-content: center;
       text-align: left;
       width: 354px;
-      
     }
 
-    &__icon{
+    &__icon {
       width: 339px;
       height: 120px;
       padding: 25px 130px;

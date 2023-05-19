@@ -46,9 +46,18 @@
   .service-list {
     visibility: hidden;
     display: none;
+    opacity: 0;
   }
   .page__section-header--hidden {
     visibility: hidden;
     display: none;
+    opacity: 0;
+  }
+
+  .section--hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0px;
   }
 }

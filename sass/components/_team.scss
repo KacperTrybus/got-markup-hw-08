@@ -3,9 +3,10 @@
 }
 .team-list {
   display: flex;
-  margin-top: 50px;
+  margin: 50px 15px -30px;
   gap: 30px;
   flex-direction: row;
+  align-items: center;
 
   &__item-box {
     background-color: #ffffff;
@@ -71,6 +72,12 @@
 @media screen and (max-width: 1199px) {
   .team-list {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .team-list {
+    margin-bottom: 20px;
   }
 }
 
