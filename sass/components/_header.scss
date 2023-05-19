@@ -3,7 +3,6 @@
   align-items: center;
   border-bottom: solid 1px;
   border-color: $borderHeader;
-  min-width: 100%;
 }
 
 .logo {
@@ -13,7 +12,8 @@
   line-height: 1.17;
   color: #000;
   text-decoration: none;
-  margin: 15px 0px;
+  margin-left: 15px;
+  justify-content: flex-start;
 
   &--blue {
     color: $hoverColor;
@@ -23,6 +23,10 @@
 @media screen and (min-width: $desktop) {
   .header {
     justify-content: center;
+  }
+
+  .logo {
+    margin: 0px;
   }
 
   .menu {

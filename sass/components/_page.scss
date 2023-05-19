@@ -28,9 +28,14 @@
     color: white;
   }
 }
+.page__image--pos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .page__btn {
-  margin: 0px 124px;
   color: white;
   background-color: $hoverColor;
   border: none;
@@ -42,6 +47,8 @@
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
+  justify-content: center;
+  align-items: center;
 }
 
 .page__section-header {
@@ -68,9 +75,6 @@
       line-height: 1.36;
       margin: 106px 252px 30px 252px;
     }
-  }
-  .page__btn {
-    margin: 0px 0px 106px 500px;
   }
 }
 
