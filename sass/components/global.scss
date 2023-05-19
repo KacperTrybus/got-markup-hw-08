@@ -27,26 +27,23 @@ ul {
   body {
     max-width: 480px;
   }
-  .container{
-    // width: 480px;
+  .container {
     margin: 0px 15px auto;
   }
-  
 }
 
 // TABLET
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-
   .container {
     margin: 0px 15px auto;
     margin-left: 15px;
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .container {
-      width: 1200px;
-      margin: 0px auto;
-    }
+    width: 1200px;
+    margin: 0px auto;
+  }
 }

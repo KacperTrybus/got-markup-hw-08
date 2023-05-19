@@ -92,9 +92,7 @@
   }
 }
 
-// MOBILE
-
-@media screen and (min-width: $mobile) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .navigation,
   .contact {
     display: none;

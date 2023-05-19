@@ -1,95 +1,96 @@
 .foot {
-    background-color: $bgColor;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &__links {
     display: flex;
+    font-style: normal;
+    text-align: center;
     flex-direction: column;
-    flex-wrap: wrap;
-
-    &__links {
-      display: flex;
-      font-style: normal;
-      text-align: center;
-      flex-direction: column;
-    }
-
-    &--logo {
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 60px 0px 20px 0px;
-    }
-
-    &__street {
-      color: white;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-    }
-
-    &__headline {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.17;
-      text-transform: uppercase;
-      color: #fff;
-      letter-spacing: 0.03em;
-    }
-
-    &__contact {
-      color: $footFontColor;
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: $hoverColor;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      &--mail {
-        display: flex;
-        padding: 9px 0px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        justify-content: center;
-      }
-    }
   }
 
-  .join-us {
+  &--logo {
+    color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 60px 137px;
+    margin: 60px 0px 20px 0px;
+  }
 
-    &__list {
-      display: flex;
-      margin-top: 20px;
-      gap: 10px;
-      flex-direction: row;
+  &__street {
+    color: white;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__headline {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.03em;
+  }
+
+  &__contact {
+    color: $footFontColor;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__icon-circle {
-      background-color: rgba(255, 255, 255, 0.1);
+    &--mail {
       display: flex;
+      padding: 9px 0px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-
-      &:hover,
-      &:focus {
-        background-color: $hoverColor;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
-
-    &-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 12px;
-      fill: #fff;
-      cursor: pointer;
     }
   }
+}
+
+.join-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 137px;
+
+  &__list {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  &__icon-circle {
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: $hoverColor;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+    }
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    fill: #fff;
+    cursor: pointer;
+  }
+}
 
 .newsletter {
   display: flex;
@@ -143,51 +144,48 @@
   }
 }
 
-@media screen and (min-width: $desktop){
-.foot {
-  flex-direction: row;
-
-  &__links {
-    margin: 0px 0px 60px 15px;
-    text-align: left;
+@media screen and (min-width: $desktop) {
+  .foot {
     flex-direction: row;
+
+    &__links {
+      margin: 0px 0px 60px 15px;
+      text-align: left;
+      flex-direction: row;
+    }
+
+    &--logo {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &__contact {
+      &--mail {
+        justify-content: flex-start;
+      }
+    }
   }
 
-  &--logo {
-    
+  .join-us {
+    margin: 72px 0px 0px 70px;
     align-items: flex-start;
-    justify-content: flex-start;
   }
+  // zapis do newslettera
 
-  &__contact {
+  .newsletter {
+    margin: 72px 0px 0px 78px;
 
-  &--mail {
-    justify-content: flex-start;
+    &-form {
+      align-items: center;
+      flex-direction: row;
+    }
+
+    &-mail__mailbox {
+      width: 358px;
+    }
+
+    &-btn {
+      margin: 0px 0px 0px 12px;
     }
   }
 }
-
-.join-us {
-  margin: 72px 0px 0px 70px;
-  align-items: flex-start;
-}
-// zapis do newslettera
-
-.newsletter {
-  margin: 72px 0px 0px 78px;
-
-  &-form {
-    align-items: center;
-    flex-direction: row;
-  }
-
-  &-mail__mailbox {
-    width: 358px;
-  }
-
-  &-btn{
-    margin: 0px 0px 0px 12px;
-  }
-}
-}
-
