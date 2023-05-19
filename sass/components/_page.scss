@@ -1,57 +1,55 @@
-@media screen and (min-width: $mobile) {
+.page--color {
+  background-color: white;
+}
 
-    .page--color {
-      background-color: white;
-    }
+.page__image {
+  background-image: url(../images/background_mobile.jpg);
+  width: 100%;
+  height: auto;
 
-    .page__image {
-      background-image: url(../images/background_mobile.jpg);
-      width: 100%;
-      height: auto;
+  &--overlay {
+    background: rgba(47, 48, 58, 0.4);
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-      &--overlay {
-        background: rgba(47, 48, 58, 0.4);
-        display: block;
-       width: 100%;
-        height: auto;
-      }
+  &-text {
+    font-size: 26px;
+    line-height: 1.61;
+    margin: 24px 43px 30px 42px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+}
 
-      &-text {
-        font-size: 26px;
-        line-height: 1.61;
-        margin: 24px 43px 30px 42px;
-        font-weight: 900;
-        letter-spacing: 0.06em;
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-      }
-    }
+.page__btn {
+  margin: 0px 124px;
+  color: white;
+  background-color: $hoverColor;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 41px 10px 42px;
+}
 
-      .page__btn {
-        margin: 0px 124px;
-        color: white;
-        background-color: $hoverColor;
-        border: none;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        display: flex;
-        letter-spacing: 0.06em;
-        cursor: pointer;
-        border-radius: 4px;
-        padding: 10px 41px 10px 42px;
-      }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .page__image {
+    background-image: url(../images/background_mobile2x.jpg);
+  }
+}
 
-      @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        .page__image {
-          background-image: url(../images/background_mobile2x.jpg);
-        }
-      }
-    
 .page__section-header {
   color: $fontColor;
   font-weight: 700;
@@ -60,52 +58,42 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-    &--hidden {
-      visibility: hidden;
-      display: none;
-    }
+  &--hidden {
+    visibility: hidden;
+    display: none;
   }
 }
 
 @media screen and (min-width: $desktop) {
+  .page__image {
+    background-image: url(../images/background_desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 
-.page__image {
-  background-image: url(../images/background_desktop.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &-text {
-    font-size: 44px;
-    line-height: 1.36;
-    margin: 106px 252px 30px 252px;
+    &-text {
+      font-size: 44px;
+      line-height: 1.36;
+      margin: 106px 252px 30px 252px;
+    }
+  }
+  .page__btn {
+    margin: 0px 0px 106px 500px;
   }
 }
-.page__btn {
-  margin: 0px 0px 106px 500px;
-}
-}
 
-.page__section-header--hidden{
+.page__section-header--hidden {
   visibility: visible;
   display: block;
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .page__image {
     background-image: url(../images/background_desktop2x.jpg);
   }
 }
-
-
-
-
-
-
-
-
 
 // @media screen and (min-width: $tablet) {
 //   .page__image {

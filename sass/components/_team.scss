@@ -13,8 +13,6 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-
-
 }
 .team-details {
   display: flex;
@@ -54,6 +52,7 @@
 
     &:hover,
     &:focus {
+      fill: white;
       background-color: $hoverColor;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -66,16 +65,10 @@
   padding: 12px;
   fill: $iconColor;
   cursor: pointer;
-
-  &:hover,
-  &:focus {
-    fill: white;
-  }
 }
 
-@media screen and (min-width: $mobile) and (max-width: 1200px){
-
-.team-list {
+@media screen and (min-width: $mobile) and (max-width: 1199px) {
+  .team-list {
     flex-direction: column;
   }
 }
@@ -94,7 +87,7 @@
 //   &__name{
 //     text-align: left;
 //     margin-left: 141px;
-    
+
 //   }
 //   &__position{
 //     text-align: left;

@@ -6,6 +6,7 @@
 
   &__item {
     border: solid 1px $borderPortfolio;
+    cursor: pointer;
 
     &:hover,
     &:hover &--overlay {

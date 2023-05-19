@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .service-list {
     position: absolute;
     visibility: hidden;
@@ -42,15 +42,13 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: $tablet){
-
-  .service-list{
+@media screen and (max-width: 1199px) {
+  .service-list {
     visibility: hidden;
     display: none;
-
   }
-    .page__section-header--hidden{
-      visibility: hidden;
-        display: none;
-    }
+  .page__section-header--hidden {
+    visibility: hidden;
+    display: none;
+  }
 }
