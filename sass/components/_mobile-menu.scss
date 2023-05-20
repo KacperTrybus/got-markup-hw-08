@@ -9,19 +9,20 @@
     visibility: visible;
     display: flex;
     opacity: 1;
+    flex-direction: column;
   }
 
   .menu__toggle {
     border: none;
-    margin: 22px 15px 22px 284px;
+    margin: 22px 15px 22px 0px;
     display: flex;
-  }
 
-  .menu__button {
-    fill: black;
+    &__button {
+      fill: black;
 
-    &:active {
-      fill: $hoverColor;
+      &:active {
+        fill: $hoverColor;
+      }
     }
   }
 
@@ -36,56 +37,81 @@
     &__site-list {
       display: flex;
       flex-direction: column;
-      // margin: 8px 0px 0px 40px;
+      margin: 8px 0px 0px 40px;
       row-gap: 32px;
+
+      &__item {
+        color: $fontColor;
+        font-size: 40px;
+        line-height: 1.17;
+        display: flex;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:active {
+          color: $hoverColor;
+        }
+      }
     }
 
     &__contact {
       display: flex;
-      // margin: 302px 0px 0px 40px;
+      margin: 302px 0px 0px 40px;
       flex-direction: column;
-      // gap: 32px;
-    }
+      gap: 32px;
 
-    &__contact-link {
-      font-size: 40px;
-      line-height: 1.17;
-
-      &--mail {
-        font-size: 20px;
-      }
-    }
-    &__social {
-      display: flex;
-      // flex-direction: row;
-      // margin: 64px 0px 0px 40px;
-      // gap: 20px;
-    }
-
-    &__social-link {
-      color: $hoverColor;
-    }
-
-    &__link {
-      color: $fontColor;
-      font-size: 40px;
-      line-height: 1.17;
-      display: flex;
-      text-decoration: none;
-      font-weight: bold;
-
-      &:active {
+      &__tel {
+        font-size: 34px;
+        text-decoration: none;
+        line-height: 1.17;
+        font-weight: 500;
         color: $hoverColor;
+        letter-spacing: 0.02em;
+      }
+
+      &__mail {
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: 1.16;
+        color: $nrColor;
+        font-weight: 500;
+        letter-spacing: 0.02em;
       }
     }
 
-    &--pos {
-      color: blue;
+    &__social-list {
+      display: flex;
+      flex-direction: row;
+      margin: 64px 0px 0px 40px;
+      gap: 20px;
+
+      &-link {
+        color: $hoverColor;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+
+        &-border {
+          border: 1px solid $formBoxColor;
+        }
+      }
     }
 
     &__close-btn {
       display: flex;
-      // margin: 21px 15px 0px 425px;
+      margin: 10px 15px 0px 0px;
+      flex-direction: row;
+
+      &:active {
+        fill: $hoverColor;
+      }
+
+      &--pos {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
     }
   }
 }
