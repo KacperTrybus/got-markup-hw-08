@@ -104,40 +104,36 @@
   }
 }
 
-// TABLET
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .header {
+    height: 80px;
+  }
 
-// @media screen and (min-width: 486px) and (max-width: $tablet) {
+  .logo {
+    margin: 26px 83px 26px 0px;
+  }
 
-//   .header {
-//     height: 80px;
-//   }
+  .menu {
+    margin: 32px 101px 32px 0px;
+    gap: 60px;
+  }
 
-//   .logo {
-//     margin: 26px 83px 26px 0px;
-//   }
+  .contact {
+    margin: 21px 0px 21px 0px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: baseline;
 
-//   .menu {
-//     margin: 32px 101px 32px 0px;
-//     gap: 60px;
-//   }
+    &__icon {
+      margin-right: 8px;
+      width: 14px;
+      height: 10px;
+    }
 
-//   .contact {
-//     margin: 21px 0px 21px 0px;
-//     gap: 10px;
-//     flex-direction: column;
-//     align-items: baseline;
-
-//     &__icon {
-//       margin-right: 8px;
-//       width: 14px;
-//       height: 10px;
-//     }
-
-//     &__link {
-//       font-size: 12px;
-//       line-height: 1.17;
-//       font-weight: 500;
-//     }
-
-//   }
-// }
+    &__link {
+      font-size: 12px;
+      line-height: 1.17;
+      font-weight: 500;
+    }
+  }
+}
