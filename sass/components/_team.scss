@@ -5,7 +5,7 @@
   display: flex;
   margin: 50px 15px -30px;
   gap: 30px;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 
   &__item-box {
@@ -69,38 +69,22 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1199px) {
-  .team-list {
-    flex-direction: column;
-  }
-}
-
 @media screen and (min-width: $desktop) {
   .team-list {
     margin-bottom: 20px;
+    flex-direction: row;
   }
 }
 
-// @media screen and (min-width: $tablet) and (max-width: 1199px){
-
-// .team-list {
-//     flex-wrap: wrap;
-
-//     &__item-box{
-//       width: calc((100% - 30px)/2);
-//     }
-
-// .team-details{
-
-//   &__name{
-//     text-align: left;
-//     margin-left: 141px;
-
-//   }
-//   &__position{
-//     text-align: left;
-//     margin-left: 112px;
-//   }
-// }
-
-// }
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .team-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px 15px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+  }
+}

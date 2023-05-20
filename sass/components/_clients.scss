@@ -38,6 +38,7 @@
   .client-list {
     margin: 0px;
     margin-top: 50px;
+    max-width: none;
   }
   .client-list__border {
     width: 170px;
@@ -47,6 +48,8 @@
 @media screen and (min-width: $tablet) and (max-width: 1199px) {
   .client-list {
     flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 900px;
 
     &__border {
       width: 226px;
