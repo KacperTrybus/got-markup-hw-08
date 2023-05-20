@@ -105,36 +105,27 @@
   display: block;
 }
 
-// @media screen and (min-width: $tablet) {
-//   .page__image {
-//     background-image: url(../images/background_tablet.jpg);
-//     max-width: 100%;
-//     max-height: 100%;
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .page__image {
+    background-image: url(../images/background_tablet.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
 
-//     &--overlay {
-//       display: block;
-//       max-width: 100%;
-//       max-height: 100%;
-//     }
+    &--overlay {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
 
-//     &-text {
-//       font-size: 26px;
-//       line-height: 1.61;
-//       margin: 24px 186px 30px 187px;
-//     }
-
-//     .page__btn {
-//       margin: 0px 268px;
-//     }
-//   }
-
-//   @media (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//     .page__image {
-//       background-image: url(../images/background_tablet2x.jpg);
-//       background-size: cover;
-//     }
-//   }
-// }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page__image {
+      background-image: url(../images/background_tablet2x.jpg);
+      background-size: cover;
+    }
+  }
+}
