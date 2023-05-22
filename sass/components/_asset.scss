@@ -49,8 +49,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -94px;
-    margin: 0px 15px 0px 15px;
+    margin: 0px 15px -15px 15px;
     gap: 30px;
     max-width: 1000px;
     margin-left: auto;
@@ -58,6 +57,7 @@
 
     &__paragraph-text {
       width: 354px;
+      margin-bottom: 0px;
     }
 
     &__icon {
