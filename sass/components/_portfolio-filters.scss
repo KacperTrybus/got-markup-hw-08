@@ -1,8 +1,11 @@
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
   gap: 8px;
+  max-width: 450px;
+  margin: -30px 0px 40px 0px;
+  margin-left: auto;
+  margin-right: auto;
 
   &__button {
     color: $fontColor;
@@ -26,5 +29,21 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .filter-list {
+    justify-content: center;
+    max-width: none;
+    flex-wrap: nowrap;
+    margin: 0px 0px 50px 0px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .filter-list {
+    max-width: none;
+    justify-content: center;
   }
 }

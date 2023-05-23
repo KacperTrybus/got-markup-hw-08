@@ -22,7 +22,7 @@
   top: 0;
   left: 0;
   position: absolute;
-  padding: 49px 45px 49px 24px;
+  padding: 77px 24px;
   color: #fff;
   background-color: $animationHover;
   font-size: 18px;
@@ -41,6 +41,7 @@
 
 .project-list-item-caption {
   margin: 10px;
+  margin-top: 20px;
 
   &__headline {
     color: $fontColor;
@@ -58,5 +59,31 @@
     letter-spacing: 0.03em;
     padding: 0px 24px 20px 24px;
     display: block;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .project-list__item--overlay {
+    padding: 49px 45px 49px 24px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1199px) {
+  .project-list__item--overlay {
+    padding: 49px 24px;
+  }
+
+  .project-list {
+    max-width: 1100px;
+    margin: 0px 15px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .project-list__item:nth-child(9) {
+    align-items: flex-start;
+    display: flex;
+    margin-right: 384px;
   }
 }
