@@ -79,6 +79,10 @@
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+
+    &-item-caption {
+      margin-right: 0px;
+    }
   }
 
   .project-list__item:nth-child(9) {
